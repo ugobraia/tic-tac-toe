@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>TIC TAC TOE</title>
+</head>
+
+<body>
+    <main data-theme="dark-purple">
+        <header class="flex align-center justify-between">
+            <h1>TIC TAC TOE</h1>
+            <button id="themeSwitcher">Switch Theme</button>
+        </header>
+
+        <div id="playerInput">
+            <label for="player1">X</label>
+            <input type="text" id="player1" placeholder="Player 1" required>
+            <input type="text" id="player2" placeholder="Player 2" required>
+            <label for="player2">O</label>
+        </div>
+
+        <button id="startGameBtn">Start Game</button>
+        
+        <div id="gameState">
+            <p id="command">Set the players!</p>
+        </div>
+
+        <div id="board">
+            <button id="btn11" class="boardTile" disabled></button>
+            <button id="btn12" class="boardTile" disabled></button>
+            <button id="btn13" class="boardTile" disabled></button>
+            <button id="btn21" class="boardTile" disabled></button>
+            <button id="btn22" class="boardTile" disabled></button>
+            <button id="btn23" class="boardTile" disabled></button>
+            <button id="btn31" class="boardTile" disabled></button>
+            <button id="btn32" class="boardTile" disabled></button>
+            <button id="btn33" class="boardTile" disabled></button>
+        </div>
+
+        <div id="restart">
+            <button id="restartBtn" disabled>Restart</button>
+        </div>
+
+        <footer>
+            <p>Developed by <a href="https://github.com/ugobraia" target="_blank">Hugo Bryan</a>
+        </footer>
+    </main>
+</body>
+
+</html>
