@@ -208,7 +208,17 @@ themeSwitcher.addEventListener('click', function(){
         root.style.setProperty('--primary-color', '#8872df')
         root.style.setProperty('--winner-bg-color', '#7565b2')
         main.dataset.theme = 'light-purple'
-    } else {
+    } else if (main.dataset.theme === 'light-purple'){
+        root.style.setProperty('--bg-color', '#212529')
+        root.style.setProperty('--font-color', '#f1f5f9')
+        root.style.setProperty('--border-color', '#f1f5f9')
+        root.style.setProperty('--disabled-bg-color', '#073b3a')
+        root.style.setProperty('--disabled-font-color', '#0b6e4f')
+        root.style.setProperty('--disabled-border-color', '#191d20')
+        root.style.setProperty('--primary-color', '#08a045')
+        root.style.setProperty('--winner-bg-color', '#21d375')
+        main.dataset.theme = 'dark-green'
+    } else if(main.dataset.theme === 'dark-green'){
         root.style.setProperty('--bg-color', '#212529')
         root.style.setProperty('--font-color', '#f1f5f9')
         root.style.setProperty('--border-color', '#f1f5f9')
